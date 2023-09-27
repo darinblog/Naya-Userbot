@@ -51,9 +51,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <summary><b>🔗 Deploy di VPS</b></summary>
 <br>
 
- • `git clone https://github.com/naya1503/Naya-Userbot`
+ • `https://github.com/darinblog/tes-Userbot`
 
- • `cd Naya-Userbot`
+ • `cd tes-Userbot`
 
  • `bash installer.sh`
 
@@ -64,7 +64,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
   - ketik ctrl + S
   - ctrl + X
 
- • `screen -S naya`
+ • `screen -S tes`
 
  • `bash start`
 
@@ -74,9 +74,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 <summary><b>🔗 Deploy Via Docker</b></summary>
 <br>
 
- • `git clone https://github.com/naya1503/Naya-Userbot`
+ • `https://github.com/darinblog/tes-Userbot`
 
- • `cd Naya-Userbot`
+ • `cd tes-Userbot`
 
  • `nano .env`
   - Jika anda menggunakan mongodb maka isi pada .env MONGO_URI tetapi jika anda menggunakan redis maka isi REDIS_URI dan REDIS_PASSWORD
@@ -85,9 +85,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
   - ketik ctrl + S
   - ctrl + X
 
- • `docker build . -t naya`
+ • `docker build . -t tes`
 
- • `docker run --name naya-userbot --env-file .env naya`
+ • `docker run --name tes-userbot --env-file .env test`
 
 </details>
 
@@ -97,7 +97,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 • Silakan isi vars yang diperlukan API_ID, API_HASH, SESSION, HEROKU_API dan HEROKU_APP_NAME
 
 <h3 align="center">Click The Button</h3>
-<a align="center" href="https://dashboard.heroku.com/new?template=https://github.com/naya1503/Naya-Userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a align="center" href="https://dashboard.heroku.com/new?template=https://github.com/darinblog/tes-Userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 </details>
