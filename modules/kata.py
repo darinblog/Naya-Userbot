@@ -70,16 +70,16 @@ from Ayra.kynan import *
 from . import *
 
 
-@ayra_cmd(pattern="Riz$")
-@register(incoming=True, from_users=DEVS, pattern=r"^Riz")
+@ayra_cmd(pattern="ay")
+@register(incoming=True, from_users=DEVS, pattern=r"^ay")
 async def _(event):
     xx = await event.eor("Aku")
     sleep(3)
     await xx.edit("Cuma Mau Bilang")
     sleep(2)
-    await xx.edit("Kalo Bang Riz ...")
+    await xx.edit("Kalo aku...")
     sleep(1)
-    await xx.edit("Ganteng Banget")
+    await xx.edit("Kangen Banget")
 
 
 # Create by myself @localheart
@@ -150,7 +150,7 @@ async def _(event):
     await event.delete()
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^riz")
+@register(incoming=True, from_users=DEVS, pattern=r"^ayy")
 async def _(event):
     await event.reply("**Mmuuaahh😘😘**")
 
