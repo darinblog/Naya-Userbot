@@ -30,11 +30,11 @@ except ImportError:
 
 from telethon.utils import resolve_bot_file_id
 
-piic = "https://graph.org/file/60408fea8439e6702674d.jpg"
+piic = "https://telegra.ph//file/a6c941d5fe6c8c8d4a5f9.jpg"
 
 buttons = [
     [
-        Button.url(get_string("bot_4"), "t.me/kynansupport"),
+        Button.url(get_string("bot_4"), "t.me/ruangrinduee"),
     ]
 ]
 
@@ -59,34 +59,33 @@ alive_txt = """
   ◈ Telethon - {}
 """
 
-in_alive = "<b>Naya-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       nayalibs :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
+in_alive = "<b>tes-Userbot</b>\n<b>     status :</b> <code>{}</code>{}\n<b>       expired_on :</b> <code>{}</code>\n<b>       dc_id :</b> <code>{}</code>\n<b>       ping_dc :</b> <code>{} ms</code>\n<b>       version :</b> <code>{}</code>\n<b>       teslibs :</b> <code>{}</code>\n<b>       uptime :</b> <code>{}</code>"
 
 absen = [
     "**Hadir Sayang** 😳",
-    "**Hadir Bro Kynan** 😁",
-    "**Maaf ka habis nemenin ka Kynan** 🥺",
-    "**Maaf ka habis disuruh Tuan Kynan** 🥺🙏🏻",
-    "**Hadir Kynan Sayang** 😘",
-    "**Hadir Kynan Akuuuuhhh** ☺️",
-    "**Hadir Kynan brother Aku** 🥰",
+    "**Hadir Bro ** 😁",
+    "**Maaf ka habis nemenin sayangku** 😘",
+    "**Maaf ka habis disuruh mama** 🥺🙏🏻",
+    "**Hadir keSayang** 😘",
+    "**Hadir Akuuuuhhh** ☺️",
     "**Sokap bet lu**",
     "**Apasi Bawel** 🥰",
 ]
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Absen$")
-async def kynanabsen(ganteng):
+async def tesabsen(ganteng):
     await ganteng.reply(choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Kynan")
+@register(incoming=True, from_users=DEVS, pattern=r"^ayy")
 async def naya(naya):
-    await naya.reply("**Kynan Punya Nya Naya**🤩")
+    await naya.reply("**ALLPYUUU**🤩")
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^Naya")
+@register(incoming=True, from_users=DEVS, pattern=r"^rex")
 async def naya(naya):
-    await naya.reply("**Naya Punya Nya Kynan**🤩")
+    await naya.reply("**Apasi manggil manggil**🗿")
 
 
 @ayra_cmd(pattern=r"^[aA][lL][iI][vV][eE](?: |$)(.*)")
@@ -190,7 +189,7 @@ async def lol(
     )
 
 
-@ayra_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
+@ayra_cmd(pattern="ping", chats=[], type=["official", "assistant"])
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
