@@ -239,7 +239,7 @@ restart_counter = 0
     pattern="restart$",
     fullsudo=False,
 )
-@register(incoming=True, from_users=DEVS, pattern=r"^Restart$")
+@register(incoming=True, from_users=DEVS, pattern=r"^Restart")
 async def restart(e):
     ok = await e.eor("`Processing...`")
     await bash("git pull")
@@ -375,7 +375,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/naya1503/Naya-Userbot/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/darinblog/tes-Userbot/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
